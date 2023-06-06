@@ -1,12 +1,14 @@
-<!DOCTYPE html> 
 <!-- This website template was created by: Maegan Marlow -->
+
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
-	<title>Forward Fitness Club</title>
+	<title>Fitness Equipment - Personal Training | Forward Fitness Club</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Forward Fitness Club has state-of-the-art fitness equipment and provides personal training">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
@@ -15,8 +17,26 @@
 </head>
 
 <body>
+
+	<!-- Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
 	
 	<div id="container">
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="abount.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nurtition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+		</nav>
 		<!-- Use the header area for the website name or logo -->
 		<header>
 			<a href="index.html"><img  alt="Forward Fitness Club Logo" src="images/forward-fitness-logo.png"></a>
@@ -34,7 +54,7 @@
 	</nav>
 		
 		<!--Use the main area to add the main content of the webpage -->
-		<main>
+		<main id="content">
 
 			<video controls poster="images/hero-image.jpg">
 				<source src="media/ffc_video.mp4" type="video/mp4">
@@ -89,14 +109,20 @@
 		
 			<dl>
 				<dt>Burpee</dt>
-				<dd>Burpees are a great full body exercise to increase your strength and endurance.Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position.</dd>
+				<dd>Burpees are a great full body exercise to increase your strength and endurance.Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position. <span class="viewex" onclick="burpees()">View Example.</span></dd>
 				
 				<dt>Plank</dt>
-				<dd>Planks build your core strength. To perform a plank, get in a push up position and rest your forearms on the floor. Hold the position as long as you can.</dd>
+				<dd>Planks build your core strength. To perform a plank, get in a push up position and rest your forearms on the floor. Hold the position as long as you can. <span class="viewex" onclick="plank()">View Example.</span></dd>
 				
 				<dt>Mountain Climber</dt>
-				<dd>Mountain Climbers are a good cardio exercise. Place your hands on the floor in a push up position, bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain).</dd>
+				<dd>Mountain Climbers are a good cardio exercise. Place your hands on the floor in a push up position, bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain). <span class="viewex" onclick="mountain()">View Example.</span></dd>
 			</dl>
+
+			<video controls id="example">
+				<source id="vid-src" src="vid" type="video/mp4"> 
+				<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+				<p>Your Broswer Does Not Support The Video Element</p>
+			</video>
 			
 			<p>For more information about how to stay active, visit the <a class="external-link" href="https://www.hhs.gov/fitness/be-active/index.html" target="_blank">U.S. Department of Health and Human Services.</a></p>
 			
@@ -106,10 +132,22 @@
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
-			<p>&copy; Copyright 2021. All Rights Reserved.</p> 
-			<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p> 
+			<div class="copyright">
+				<p>&copy; Copyright 2021. All Rights Reserved.</p> 
+				<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p> 
+				</div>
+		
+				<div class="social">
+					<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a> 
+		
+					<a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+		
+				</div>
+			
 		</footer>
 	</div>
+
+	<script src="scripts/script.js"></script>
 
 </body>
 </html> 	

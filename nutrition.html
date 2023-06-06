@@ -1,12 +1,15 @@
-<!DOCTYPE html> 
 <!-- This website template was created by: Maegan Marlow -->
+
+
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
-	<title>Forward Fitness Club</title>
+	<title>Nutrition Guidance | Forward Fitness Club</title>
 	<meta charset="utf-8"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forward Fitness Club provides nutrition guides and meal planning to help you meet your nutrition goals">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
@@ -15,8 +18,26 @@
 </head>
 
 <body>
+
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
 	
 	<div id="container">
+
+        <!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="abount.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nurtition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+		</nav>
 		<!-- Use the header area for the website name or logo -->
 		<header>
 			<a href="index.html"><img alt="Forward Fitness Club Logo" src="images/forward-fitness-logo.png"></a>
@@ -38,7 +59,7 @@
         </div>
 
 		<!--Use the main area to add the main content of the webpage -->
-		<main class="grid">
+		<main class="grid" id="contact">
                 <article>
                     <h3>Food for Thought</h3>
                     <img src="images/food-thought.jpg" alt="food for thought image" class="round">
@@ -90,10 +111,22 @@
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
-			<p>&copy; Copyright 2021. All Rights Reserved.</p> 
-			<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p> 
+			<div class="copyright">
+                <p>&copy; Copyright 2021. All Rights Reserved.</p> 
+                <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p> 
+                </div>
+        
+                <div class="social">
+                    <a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a> 
+        
+                    <a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+        
+                </div>
+            
 		</footer>
 	</div>
+    
+    <script src="scripts/script.js"></script>
 
 </body>
 </html> 	
